@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Raghad</title>
+  <!-- Font Awesome CDN for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    :root {
+      --primary-color: #f5f1eb;
+      --secondary-color: #a78b71; 
+      --dark-bg: #0d0d0d;
+      --accent-bg: #2b1f1f;
+      --card-bg:  #8b7355;
+    }
+    
+    body {
+      margin: 0;
+      padding: 60px 20px;
+      font-family: Optima;
+ background: linear-gradient(135deg, #0d0d0d 60%, #2b1f1f 100%);
+ color: var(--primary-color);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+
+    .about-section {
+      background: rgba(27, 27, 27, 0.8);
+      padding: 30px;
+      border-radius: 15px;
+      margin: 30px 0;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    .about-text {
+      font-size: 1.1rem;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin: 25px 0;
+    }
+
+    .skill-chip {
+      background: var(--card-bg);
+      padding: 8px 20px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      border: 1px solid rgba(255, 215, 0, 0.2);
+    }
+
+    .B-btn {
+      margin: 15px 10px;
+      padding: 12px 28px;
+      background: linear-gradient(to right, #3b2f2f, var(--card-bg));
+      color: white;
+      border-radius: 25px;
+      text-decoration: none;
+      font-size: 1rem;
+      display: inline-block;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+      border: none;
+      cursor: pointer;
+    }
+
+    .B-btn:hover {
+      background: linear-gradient(to right, #5c3d2e, #2a2a2a);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.7);
+      transform: translateY(-2px);
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin: 30px 0;
+      flex-wrap: wrap;
+    }
+
+    .social-icons a {
+      color: var(--primary-color);
+      font-size: 1.1rem;
+      text-decoration: none;
+      transition: all 0.3s;
+      display: flex;
+      align-items: center;
+      padding: 8px 15px;
+      border-radius: 8px;
+      background: rgba(255,255,255,0.05);
+    }
+
+    .social-icons a i {
+      margin-right: 8px;
+      font-size: 1.2rem;
+    }
+
+    .social-icons a:hover {
+      color: var(--secondary-color);
+      background: rgba(255,215,0,0.1);
+      transform: translateY(-2px);
+    }
+
+    .btn-group {
+      margin: 40px 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    
+      
+     
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>About Me</h1>
+    </header>
+
+    <section class="about-section">
+      <div class="about-text">
+        <p>Hello My name is <strong>Raghad</strong>. I'm a 20-year-old Software Engineering student passionate about all areas of technology ,I have experience in programming languages such as <strong>Java</strong>, <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>,I have strong knowledge of fundamental data structures and algorithms and implementing them in Java.</p>
+      </div>
+
+      <h2>My Skills</h2>
+      <div class="skills">
+        <span class="skill-chip">Java</span>
+        <span class="skill-chip">HTML</span>
+        <span class="skill-chip">CSS</span>
+        <span class="skill-chip">JavaScript</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact Me</h2>
+      <div class="social-icons">
+        <a href="mailto:rain02803@gmail.com" aria-label="Email">
+          <i class="fas fa-envelope"></i>Email
+        </a>
+        <a href="https://www.instagram.com/nextlogic_788/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>Instagram
+        </a>
+        <a href="https://github.com/Rodiya745" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <i class="fab fa-github"></i>GitHub
+        </a>
+      </div>
+    </section>
+
+    <div class="btn-group">
+	      <a href="Portfolio1.html" class="B-btn">← Back to Home</a>
+      <a href="Myprojects.html" class="B-btn">View My Projects →</a>
+    </div>
+  </div>
+</body>
+</html>

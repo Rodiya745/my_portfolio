@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      background: linear-gradient(135deg, #0d0d0d 60%, #2b1f1f 100%);
+      color: #fff;
+      font-family: Optima;
+      margin: 0;
+      padding: 40px 20px;
+    }
+
+    h2 {
+      color: #ffcc99;
+      text-align: center;
+      margin-bottom: 50px;
+      font-size: 2.2rem;
+    }
+
+    .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .card {
+      background: linear-gradient(145deg, #3a1f00, #1a0d00);
+      border-radius: 16px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+      width: 100%;
+      max-width: 360px;
+      padding: 20px;
+      transition: transform 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card:hover {
+      transform: scale(1.04);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+      color: #ffd699;
+      text-align: center;
+    }
+
+    .image-gallery {
+      display: flex;
+      overflow-x: auto;
+      gap: 10px;
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+    }
+
+    .image-gallery img {
+      height: 140px;
+      width: 240px;
+      object-fit: cover;
+      border-radius: 10px;
+      flex-shrink: 0;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #f0e8e0;
+      text-align: justify;
+    }
+
+    a.B-btn {
+      margin: 60px auto 0;
+      padding: 12px 28px;
+      background: linear-gradient(to right, #3b2f2f, #1a1a1a);
+      color: white;
+      border-radius: 25px;
+      text-decoration: none;
+      font-size: 1rem;
+      display: inline-block;
+      transition: background 0.3s ease;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    }
+
+    a.B-btn:hover {
+      background: linear-gradient(to right, #5c3d2e, #2a2a2a);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+    }
+
+    /* Scrollbar styling (optional for better UX) */
+    .image-gallery::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .image-gallery::-webkit-scrollbar-thumb {
+      background-color: #555;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .image-gallery img {
+        width: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>My Projects</h2>
+
+  <div class="cards-container">
+
+    <div class="card">
+      <h3>Tourism Website</h3>
+      <div class="image-gallery">
+        <img src="Screenshot 2025-07-22 013207.png" alt="Tourism Screenshot 1">
+		<br>
+        <img src="Screenshot 2025-07-22 013240.png" alt="Tourism Screenshot 2">
+		<br>
+		<br>
+        <img src="Screenshot 2025-07-22 015554.png" alt="Tourism Screenshot 3">
+      </div>
+      <p>
+        This is a short view of the Tourism website which provide infromation about the destinations  such as historical timelines, unique places, and top-rated restaurants. The goal was to offer visitors a complete travel planning experience in one place.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Focus Timer </h3>
+      <div class="image-gallery">
+        <img src="Screenshot 2025-07-22 020417.png" alt="Focus Timer Screenshot">
+      </div>
+      <p>
+        A a smaple "Study Focus" timer that helps users stay productive with time-boxed focus sessions and optional ambient background sounds.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Hash Table Problem Solver</h3>
+      <div class="image-gallery">
+        <img src="Screenshot 2025-07-22 020820.png" alt="Hash Table Screenshot 1">
+        <img src="Screenshot 2025-07-22 020835.png" alt="Hash Table Screenshot 2">
+        <img src="Screenshot 2025-07-22 020847.png" alt="Hash Table Screenshot 3">
+        <img src="Screenshot 2025-07-22 020903.png" alt="Hash Table Screenshot 4">
+        <img src="Screenshot 2025-07-22 021003.png" alt="Hash Table Screenshot 5">
+      </div>
+      <p>
+        This project is from my understanding about  hash tables and how we can use it for solving real-world coding challenges. I implemented efficient solutions for problems like detecting duplicates, frequency counting,using Java.
+      </p>
+    </div>
+
+  </div>
+
+  <a href="about.html" class="B-btn">← Back</a>
+
+</body>
+</html>
